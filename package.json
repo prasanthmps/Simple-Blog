@@ -1,5 +1,5 @@
 {
-  "name": "Simple-Blog",
+  "name": "SimpleBlog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "14.16.0"
+  },
   "bugs": {
     "url": "https://github.com/prasanthmps/Simple-Blog/issues"
   },
@@ -24,6 +27,7 @@
     "jsdom": "^16.6.0",
     "marked": "^2.0.6",
     "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
     "mongoose": "^5.12.9",
     "nodemon": "^2.0.7",
     "slugify": "^1.5.3"

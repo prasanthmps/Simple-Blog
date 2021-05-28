@@ -7,7 +7,7 @@ const Article=require('./models/article')
 const articleRouter=require('./routes/articles')
 const app=express();
 
-mongoose.connect('mongodb://localhost/blog', {
+mongoose.connect('mongodb+srv://admin-prasanth:prasanthmps@cluster0.6jcdg.mongodb.net/blog', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 app.set('view engine','ejs')
@@ -23,4 +23,8 @@ app.get('/',async (req,res)=>{
     res.render('articles/index',{articles:articles})
 })
  
-app.listen(5000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
+app.listen(port);
