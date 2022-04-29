@@ -7,7 +7,7 @@ const Article=require('./models/article')
 const articleRouter=require('./routes/articles')
 const app=express();
 
-mongoose.connect('mongodb+srv://admin-prasanth:prasanthmps@cluster0.6jcdg.mongodb.net/blog', {
+mongoose.connect('mongodb+srv://prasanthmps:prasanthmps@cluster0.cbhc9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 app.set('view engine','ejs')
