@@ -24,7 +24,4 @@ app.get('/',async (req,res)=>{
 })
  
 let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 5000;
-}
-app.listen(5000);
+app.listen(process.env.PORT || 5000)
